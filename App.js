@@ -19,7 +19,7 @@ export default class App extends Component {
   }
 
   getWeather(lat, lng) {
-    const url = `api.openweathermap.org/data/2.5/weather?appid=fb618e8c4e64283120228836fd18bf36&lat=${lat}&${lng}=139`
+    const url = `api.openweathermap.org/data/2.5/weather?appid=fb618e8c4e64283120228836fd18bf36&lat=${lat}&lng=${lng}`
     fetch(url)
       .then(data => console.log(data))  
   }
